@@ -8,7 +8,7 @@ still in development
 
 ## first character designs
 
-![Image description](/home/wootz/Documentos/Programas en Python/Berserk Project/src/desktop/image/warrior.png)
+!![](src/desktop/image/warrior.png)
 
 ## Usage
 
