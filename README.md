@@ -8,7 +8,7 @@ still in development
 
 ## First character designs
 
-![](src/desktop/image/warrior.png)
+![](src/desktop/image/warrior.gif)
 
 ## Usage
 
