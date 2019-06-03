@@ -6,9 +6,9 @@ Currently, we see every time that games appear for all platforms, the root of th
 
 still in development
 
-## first character designs
+## First character designs
 
-![Image description](/home/wootz/Documentos/Programas en Python/Berserk Project/src/desktop/image/warrior.png)
+![](src/desktop/image/warrior.png)
 
 ## Usage
 
