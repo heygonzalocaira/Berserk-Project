@@ -1,53 +1,40 @@
-import pygame 
 
-pygame.init() 
+import sys , pygame
+from pygame.locals import *
+from settings_lvl1 import Settings_lvl1
+from character import *
+import game_functions as gf 
+from pygame.sprite import Group
 
-win  = pygame.display.set_mode((500,500))
+"""
+Programming Style
+ - Things
+ - Pipeline
+ - Letterbox
 
-pygame.display.set_caption("Berserk Game Prototype")
+"""
 
-pos_x = 50 
-pos_y = 350
-width = 40
-height = 60
-vel = 25
-isJump = False
-jumpCount = 10
+def main():
+    #Initialize game,settings and create a scren object.
+    pygame.init()
+    ai_settings = Settings_lvl1()
+    screen = pygame.display.set_mode(
+        (ai_settings.screen_widht,ai_settings.screen_height))
 
-gameBool = True
+    # Make a  Assasin
+    character_A = Assasin(ai_settings,screen)
 
-while gameBool:
-    pygame.time.delay(100)
 
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            gameBool = False
 
-    key = pygame.key.get_pressed()
-    if key[pygame.K_LEFT] and pos_x > vel:  #prevent it from leaving the screen
-        pos_x -= vel
-    if key[pygame.K_RIGHT] and x < 500 - width -vel: #prevent it from leaving the screen
-        pos_x += vel
-    if not isJump:
-        if key[pygame.K_UP] and y > vel:
-            pos_y -= vel
-        if key[pygame.K_DOWN] and y <500 - height -vel:
-            pos_y += vel
-        if key[pygame.K_SPACE]:
-            isJump = True
-    else:
-        if jumpCount >= -10:
-            neg =1
-            if jumpCount < 0:
-                neg = -1
-            pos_y -= (jumpCount ** 2) * 0.5 * neg
-            jumpCount -= 1
-        else:
-            isJump = False
-            jumpCount = 10
-    win.fill((0,0,0))
-    pygame.draw.rect(win,(255, 0, 0),(pos_x,pos_y,width,height))
-    pygame.display.update()
+    #Start the main loop fot the game
+    while True:
 
-pygame.quit
- 
+        #Watch for keyboard and mouse events.
+        gf.check_events(ai_settings,screen,character_A)
+        character_A.update()
+        gf.update_screen(ai_settings,screen,character_A)
+
+if __name__ == '__main__':
+    main()
+
+
