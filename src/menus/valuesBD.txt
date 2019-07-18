@@ -1,0 +1,4 @@
+HOSTNAME = localhost
+USERNAME = jtorres
+PASSWORD = 12345
+DATABASENAME = Berserk
