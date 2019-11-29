@@ -6,7 +6,7 @@ Currently, we see every time that games appear for all platforms, the root of th
 
 still in development
 
-## First character designs
+## Images
 
 ![](src/desktop/background.png)
 
