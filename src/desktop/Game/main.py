@@ -13,9 +13,9 @@ stagePosX=0
 pygame.display.set_caption("Berserk Game")
 
 
-bg = pygame.image.load('background.png')
+bg = pygame.image.load('images/background.png')
 bgWidth, bgHeight = bg.get_rect().size
-char = pygame.image.load('standing.png')
+#char = pygame.image.load('standing.png')
 
 clock = pygame.time.Clock()
 

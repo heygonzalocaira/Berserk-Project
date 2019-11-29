@@ -1,53 +1,53 @@
 import pygame
 
-walkRight = [pygame.image.load('warrior_f9.png'),
-             pygame.image.load('warrior_f10.png'),
-             pygame.image.load('warrior_f11.png'),
-             pygame.image.load('warrior_f12.png'),
-             pygame.image.load('warrior_f9.png'),
-             pygame.image.load('warrior_f10.png'),
-             pygame.image.load('warrior_f11.png'),
-             pygame.image.load('warrior_f12.png'),
-             pygame.image.load('warrior_f9.png')]
-walkLeft = [pygame.image.load('WL1.png'),
-            pygame.image.load('WL1.png'),
-            pygame.image.load('WL2.png'),
-            pygame.image.load('WL3.png'),
-            pygame.image.load('WL4.png'),
-            pygame.image.load('WL1.png'),
-            pygame.image.load('WL2.png'),
-            pygame.image.load('WL3.png'),
-            pygame.image.load('WL4.png')]
+walkRight = [pygame.image.load('images/warrior_f9.png'),
+             pygame.image.load('images/warrior_f10.png'),
+             pygame.image.load('images/warrior_f11.png'),
+             pygame.image.load('images/warrior_f12.png'),
+             pygame.image.load('images/warrior_f9.png'),
+             pygame.image.load('images/warrior_f10.png'),
+             pygame.image.load('images/warrior_f11.png'),
+             pygame.image.load('images/warrior_f12.png'),
+             pygame.image.load('images/warrior_f9.png')]
+walkLeft = [pygame.image.load('images/WL1.png'),
+            pygame.image.load('images/WL1.png'),
+            pygame.image.load('images/WL2.png'),
+            pygame.image.load('images/WL3.png'),
+            pygame.image.load('images/WL4.png'),
+            pygame.image.load('images/WL1.png'),
+            pygame.image.load('images/WL2.png'),
+            pygame.image.load('images/WL3.png'),
+            pygame.image.load('images/WL4.png')]
 
-walkLeft = [pygame.image.load('WL1.png'),
-            pygame.image.load('WL1.png'),
-            pygame.image.load('WL2.png'),
-            pygame.image.load('WL3.png'),
-            pygame.image.load('WL4.png'),
-            pygame.image.load('WL1.png'),
-            pygame.image.load('WL2.png'),
-            pygame.image.load('WL3.png'),
-            pygame.image.load('WL4.png')]
+walkLeft = [pygame.image.load('images/WL1.png'),
+            pygame.image.load('images/WL1.png'),
+            pygame.image.load('images/WL2.png'),
+            pygame.image.load('images/WL3.png'),
+            pygame.image.load('images/WL4.png'),
+            pygame.image.load('images/WL1.png'),
+            pygame.image.load('images/WL2.png'),
+            pygame.image.load('images/WL3.png'),
+            pygame.image.load('images/WL4.png')]
 
-attack_a = [pygame.image.load('warrior_f5.png'),
-            pygame.image.load('warrior_f6.png'),
-            pygame.image.load('warrior_f7.png'),
-            pygame.image.load('warrior_f8.png'),
-            pygame.image.load('warrior_f5.png'),
-            pygame.image.load('warrior_f6.png'),
-            pygame.image.load('warrior_f7.png'),
-            pygame.image.load('warrior_f8.png'),
-            pygame.image.load('warrior_f8.png')]
+attack_a = [pygame.image.load('images/warrior_f5.png'),
+            pygame.image.load('images/warrior_f6.png'),
+            pygame.image.load('images/warrior_f7.png'),
+            pygame.image.load('images/warrior_f8.png'),
+            pygame.image.load('images/warrior_f5.png'),
+            pygame.image.load('images/warrior_f6.png'),
+            pygame.image.load('images/warrior_f7.png'),
+            pygame.image.load('images/warrior_f8.png'),
+            pygame.image.load('images/warrior_f8.png')]
 
-static_a = [pygame.image.load('warrior_mode1.png'),
-            pygame.image.load('warrior_mode2.png'),
-            pygame.image.load('warrior_mode3.png'),
-            pygame.image.load('warrior_mode4.png'),
-            pygame.image.load('warrior_mode1.png'),
-            pygame.image.load('warrior_mode2.png'),
-            pygame.image.load('warrior_mode3.png'),
-            pygame.image.load('warrior_mode4.png'),
-            pygame.image.load('warrior_mode4.png')]
+static_a = [pygame.image.load('images/warrior_mode1.png'),
+            pygame.image.load('images/warrior_mode2.png'),
+            pygame.image.load('images/warrior_mode3.png'),
+            pygame.image.load('images/warrior_mode4.png'),
+            pygame.image.load('images/warrior_mode1.png'),
+            pygame.image.load('images/warrior_mode2.png'),
+            pygame.image.load('images/warrior_mode3.png'),
+            pygame.image.load('images/warrior_mode4.png'),
+            pygame.image.load('images/warrior_mode4.png')]
 
 class player(object):
     def __init__(self,x,y,width,height):
