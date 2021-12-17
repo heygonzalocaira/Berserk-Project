@@ -11,8 +11,8 @@ class Login(wx.Frame):
         # Widget Creation
 
         # Create the button
-        self.Solo = wx.Button(self, label="JugarSolo")
-        self.Multiplayer= wx.Button(self, label="JugarMultiplayer")
+        self.Solo = wx.Button(self, label="Jugar_Solo")
+        self.Multiplayer= wx.Button(self, label="Jugar_Multiplayer")
         self.Opciones = wx.Button(self, label="Opciones")
         self.Salir = wx.Button(self, label="Salir")
 
